@@ -5,7 +5,10 @@ class Solution:
             if s[i]=='(':
                 stk.append(s[i])
             elif s[i]==')':
-                stk.pop() if stk and stk[-1] =='(' else stk.append(s[i])
+                if stk and stk[-1] =='(':
+                    stk.pop()
+                else:
+                    stk.append(s[i])
         return len(stk)
                 
 	
