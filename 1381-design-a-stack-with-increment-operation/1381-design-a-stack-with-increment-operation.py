@@ -21,8 +21,15 @@ class CustomStack:
 
     def increment(self, k: int, val: int) -> None:
         s = min(k,len(self.stack))
-        for i in range(s):
-            self.stack[i] += val
+        if k<=len(self.stack):
+            for i in range(k):
+                self.stack[i]+=val
+        else:
+            for i in range(len(self.stack)):
+                self.stack[i]+=val
+                
+        #for i in range(s):
+      #      self.stack[i] += val
            # for j in range(len(self.stack)):
             #    self.stack[j]+=val
             #[x+val for x in self.stack]
