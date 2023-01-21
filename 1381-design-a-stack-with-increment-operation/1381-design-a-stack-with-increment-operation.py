@@ -12,7 +12,7 @@ class CustomStack:
         
 
     def pop(self) -> int:
-        if len(self.stack)<=0:
+        if not self.stack:
             return -1
         else:
             return self.stack.pop()
