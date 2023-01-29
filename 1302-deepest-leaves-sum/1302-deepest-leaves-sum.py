@@ -8,7 +8,7 @@ class Solution:
     def deepestLeavesSum(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
-        s = 0
+       # s = 0
         q = [[root]]
         while q:
             h = q.pop(0)
