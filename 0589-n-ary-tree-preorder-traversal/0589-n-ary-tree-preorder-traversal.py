@@ -8,7 +8,7 @@ class Node:
 
 class Solution:
     def preorder(self, root: 'Node') -> List[int]:
-        
+
         def dfs(root, output):
             if not root:
                 return None
