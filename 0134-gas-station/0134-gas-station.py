@@ -4,8 +4,10 @@ class Solution:
         sum_of_cost = sum(cost)
         diff = 0
         start = 0
+        
         if sum_of_gas < sum_of_cost:
             return -1 
+        
         else:
             lst = [] 
             for i in range(len(gas)):
